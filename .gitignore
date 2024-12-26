@@ -6,3 +6,4 @@ app.db
 Dockerfile
 blackjack-docker.*
 compress.js
+.env

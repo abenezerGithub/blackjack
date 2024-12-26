@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Black Jack</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style type="text/css"></style>
+  </head>
+  <body class="game-home">
+    <div class="game-play-settings">
+      <div class="nav-settings-play">
+        <a href="/index.html" class="back-button" title="Back to Home">
+          <svg
+            class="back-svg"
+            version="1.1"
+            id="Capa_1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 26.676 26.676"
+            xml:space="preserve"
+          >
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+            <g
+              id="SVGRepo_tracerCarrier"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></g>
+            <g id="SVGRepo_iconCarrier">
+              <g>
+                <path
+                  d="M26.105,21.891c-0.229,0-0.439-0.131-0.529-0.346l0,0c-0.066-0.156-1.716-3.857-7.885-4.59 c-1.285-0.156-2.824-0.236-4.693-0.25v4.613c0,0.213-0.115,0.406-0.304,0.508c-0.188,0.098-0.413,0.084-0.588-0.033L0.254,13.815 C0.094,13.708,0,13.528,0,13.339c0-0.191,0.094-0.365,0.254-0.477l11.857-7.979c0.175-0.121,0.398-0.129,0.588-0.029 c0.19,0.102,0.303,0.295,0.303,0.502v4.293c2.578,0.336,13.674,2.33,13.674,11.674c0,0.271-0.191,0.508-0.459,0.562 C26.18,21.891,26.141,21.891,26.105,21.891z"
+                ></path>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+                <g></g>
+              </g>
+            </g>
+          </svg>
+        </a>
+        <div>
+          <button class="sound-button" title="Sound Toggle">
+            <svg
+              class="sound-svg sound-on-svg"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 330 330"
+              xml:space="preserve"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g id="XMLID_531_">
+                  <path
+                    id="XMLID_532_"
+                    d="M255,210h-10c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h10c8.284,0,15-6.716,15-15 C270,216.716,263.284,210,255,210z"
+                  ></path>
+                  <path
+                    id="XMLID_533_"
+                    d="M285,150h-40c-8.284,0-15,6.716-15,15c0,8.284,6.716,15,15,15h40c8.284,0,15-6.716,15-15 C300,156.716,293.284,150,285,150z"
+                  ></path>
+                  <path
+                    id="XMLID_534_"
+                    d="M315,90h-70c-8.284,0-15,6.716-15,15s6.716,15,15,15h70c8.284,0,15-6.716,15-15S323.284,90,315,90z"
+                  ></path>
+                  <path
+                    id="XMLID_535_"
+                    d="M192.078,31.775c-4.878-2.61-10.796-2.324-15.398,0.744L90.459,90H15c-8.284,0-15,6.716-15,15v120 c0,8.284,6.716,15,15,15h75.459l86.221,57.481c2.51,1.673,5.411,2.519,8.321,2.519c2.427,0,4.859-0.588,7.077-1.775 c4.877-2.61,7.922-7.693,7.922-13.225V45C200,39.468,196.955,34.385,192.078,31.775z M170,256.972l-66.68-44.453 C100.856,210.876,97.961,210,95,210H30v-90h65c2.961,0,5.856-0.876,8.32-2.519L170,73.028V256.972z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+            <svg
+              class="sound-svg sound-off-svg"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 319.748 319.748"
+              xml:space="preserve"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g id="XMLID_783_">
+                  <path
+                    id="XMLID_784_"
+                    d="M192.078,26.649c-4.878-2.61-10.795-2.324-15.398,0.744L90.458,84.874H15c-8.284,0-15,6.716-15,15v120 c0,8.284,6.716,15,15,15h75.458l86.221,57.481c2.51,1.673,5.411,2.519,8.321,2.519c2.426,0,4.859-0.588,7.077-1.775 c4.878-2.61,7.922-7.693,7.922-13.225v-240C200,34.342,196.955,29.259,192.078,26.649z M170,251.846l-66.68-44.453 c-2.464-1.643-5.359-2.519-8.32-2.519H30v-90h65c2.961,0,5.856-0.877,8.32-2.519L170,67.902V251.846z"
+                  ></path>
+                  <path
+                    id="XMLID_787_"
+                    d="M301.212,159.873l14.142-14.142c5.858-5.858,5.858-15.355,0-21.213c-5.857-5.858-15.355-5.858-21.213,0 l-14.142,14.142l-14.142-14.142c-5.857-5.858-15.356-5.858-21.213,0c-5.858,5.858-5.858,15.355,0,21.213l14.142,14.142 l-14.142,14.142c-5.858,5.858-5.858,15.355,0,21.213c2.929,2.929,6.768,4.393,10.607,4.393c3.839,0,7.678-1.464,10.606-4.393 l14.142-14.142l14.142,14.142c2.929,2.929,6.768,4.393,10.606,4.393c3.839,0,7.678-1.464,10.606-4.393 c5.858-5.858,5.858-15.355,0-21.213L301.212,159.873z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="game-holder">
+      <div class="container-1">
+        <h2>Black Jack Game</h2>
+        <h3 class="h2"><span id="letsplay">Let's Play</span></h3>
+      </div>
+      <div class="container-2">
+        <div id="player-box">
+          <h3>You:<span id="player-score">0</span></h3>
+          <div class="active-player card-maker" id="player-1"></div>
+        </div>
+        <div id="bot-box">
+          <h3>Dealer:<span id="bot-score">0</span></h3>
+          <div class="bot-player card-maker" id="player-2"></div>
+        </div>
+      </div>
+      <div class="btn-holder">
+        <main>
+          <button type="button" class="hit-btn" id="hit-btn-id">
+            <div>Hit</div>
+            <svg
+              class="hit-svg"
+              viewBox="-6.5 0 32 32"
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <title>dropdown</title>
+                <path
+                  d="M18.813 11.406l-7.906 9.906c-0.75 0.906-1.906 0.906-2.625 0l-7.906-9.906c-0.75-0.938-0.375-1.656 0.781-1.656h16.875c1.188 0 1.531 0.719 0.781 1.656z"
+                ></path>
+              </g>
+            </svg>
+          </button>
+          <button
+            disabled="true"
+            type="button"
+            class="stand-btn"
+            id="stand-btn-id"
+          >
+            <div>Stand</div>
+            <svg
+              class="stand-svg"
+              height="200px"
+              width="200px"
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 485 485"
+              xml:space="preserve"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path
+                    d="M382.5,69.429c-7.441,0-14.5,1.646-20.852,4.573c-4.309-23.218-24.7-40.859-49.148-40.859 c-7.68,0-14.958,1.744-21.467,4.852C285.641,16.205,265.932,0,242.5,0c-23.432,0-43.141,16.206-48.533,37.995 c-6.508-3.107-13.787-4.852-21.467-4.852c-27.57,0-50,22.43-50,50v122.222c-6.129-2.686-12.891-4.187-20-4.187 c-27.57,0-50,22.43-50,50V354c0,72.233,58.766,131,131,131h118c72.233,0,131-58.767,131-131V119.429 C432.5,91.858,410.07,69.429,382.5,69.429z M402.5,354c0,55.691-45.309,101-101,101h-118c-55.691,0-101-45.309-101-101V251.178 c0-11.028,8.972-20,20-20s20,8.972,20,20v80h30V83.143c0-11.028,8.972-20,20-20s20,8.972,20,20v158.035h30V50 c0-11.028,8.972-20,20-20c11.028,0,20,8.972,20,20v191.178h30V83.143c0-11.028,8.972-20,20-20s20,8.972,20,20v158.035h30v-121.75 c0-11.028,8.972-20,20-20s20,8.972,20,20V354z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </button>
+          <button type="button" class="reset-btn" id="reset-btn-id">
+            <div>Reset</div>
+            <svg
+              class="reset-svg"
+              fill="#000000"
+              height="200px"
+              width="200px"
+              version="1.1"
+              id="Capa_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 489.533 489.533"
+              xml:space="preserve"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <g>
+                  <path
+                    d="M268.175,488.161c98.2-11,176.9-89.5,188.1-187.7c14.7-128.4-85.1-237.7-210.2-239.1v-57.6c0-3.2-4-4.9-6.7-2.9 l-118.6,87.1c-2,1.5-2,4.4,0,5.9l118.6,87.1c2.7,2,6.7,0.2,6.7-2.9v-57.5c87.9,1.4,158.3,76.2,152.3,165.6 c-5.1,76.9-67.8,139.3-144.7,144.2c-81.5,5.2-150.8-53-163.2-130c-2.3-14.3-14.8-24.7-29.2-24.7c-17.9,0-31.9,15.9-29.1,33.6 C49.575,418.961,150.875,501.261,268.175,488.161z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </main>
+      </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="blackjackscript.js"></script>
+  </body>
+</html>

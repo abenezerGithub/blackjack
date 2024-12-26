@@ -1,0 +1,8 @@
+node_modules
+./clients/images_0
+./clients/images
+./clients/sounds
+app.db
+Dockerfile
+blackjack-docker.*
+compress.js

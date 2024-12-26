@@ -1,7 +1,7 @@
 node_modules
-./clients/images_0
-./clients/images
-./clients/sounds
+client/images_0
+client/images
+client/sounds
 app.db
 Dockerfile
 blackjack-docker.*
